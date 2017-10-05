@@ -5,4 +5,5 @@ class User < ActiveRecord::Base
     has_many :posts
     has_many :messages, through: :posts
     has_many :posts 
+    has_many :comments, as: :commetable 
 end
